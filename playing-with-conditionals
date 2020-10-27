@@ -1,0 +1,142 @@
+// LEARNING ABOUT CONDITIONAL STATEMENTS 
+
+let score = 100 
+
+if (score > 99)  { 
+  console.log('Congratulations! You win ' + (Math.floor(Math.random()*1000)) + ' bottles of fairy liquid!')
+}
+// argument needs to be entirely within the brackets 
+
+ticketNumber = 98
+if (ticketNumber > 99)  { 
+  console.log('Congratulations! You win ' + (Math.floor(Math.random()*1000)) + ' bottles of bubble bath!')
+}
+else {
+console.log('Wow. You pulled ticket number ' + ticketNumber +  '. That\'s sad...')
+}
+
+// comparison operators 
+
+let raffleNumber = (Math.floor(Math.random()*100))
+
+if (raffleNumber === 50) {
+console.log('Oh my goooooooshhhh. Your number was 50 and you win NOTHING.')
+} 
+else {
+console.log('Aren\'t you the lucky one. You win 5p')
+}
+// this operator checks that something is EQUAL to another thing 
+
+let houseNumber = 22
+
+if (houseNumber !== 22) {
+console.log('What are you doing?! This isn\'t your house!")
+} 
+else {
+console.log('Welcome home darling')
+} 
+// remember that the unequal operator has only two equals and one exclamation mark!!!!!
+
+// LOGICAL OPERATORS 
+
+if (day === 'Payday' || happyHour === true) { 
+  console.log('Drinks are on me!');
+} else {
+  console.log('Buy your own.');
+}
+// will pass either argument BTW you need to use the === sign even if using a boolean!
+
+if (time >= 13 && hungerLevel > 6) {
+  console.log('Time to eat');
+} else {
+  console.log('Put the crisps down');
+}
+// you need to be more than 6 hungry and it needs to be at least 1pm to eat 
+
+// TRUTHY AND FALSY ASSIGNMENT 
+
+let garment = undefined;
+
+// Use short circuit evaluation to assign  writingUtensil variable below:
+let thingToBuy = garment || 'some clothing';
+
+console.log(`Ah, do you want to buy ${thingToBuy}?`);
+
+// will log 'some clothing' if the variable is null or undefined
+
+// TERNARY OPERATORS 
+
+let isLocked = false;
+
+isLocked ? console.log('You will need a key to open the door.') : console.log('You will not need a key to open the door.');
+// if the first argument passed after the ? is true then the first statement will pass, otherwise it will pass the statement after the colon 
+
+let favoritePhrase = 'Love That!';
+
+favoritePhrase === 'Love That!' ? console.log('I love that!') : console.log("I don't love that!");
+// can be used with phrases 
+
+let salary = 34000; 
+
+salary >= 35000 ? console.log('You need to pay more tax!') : console.log('You are on the correct tax code');  
+// it works with comparison operators but remember you don't need to put the argument in brackets 
+
+// ELSE IF STATEMENTS 
+
+let wordsWritten = 2456
+
+if (wordsWritten < 1) {
+console.log('You haven\'t started writing yet!')
+} else if (wordsWritten >= 1 && wordsWritten < 100) {
+  console.log('Great start!')
+} else if (wordsWritten >= 100 && wordsWritten < 2000) {
+  console.log('You are well on your way, keep going!')
+} else if (wordsWritten >= 2000 && wordsWritten < 3000) {
+  console.log('You are almost finished!')
+} else if (wordsWritten > 3000) {
+  console.log('Woah there. You\'ve written too much!')
+}
+
+// SWITCH STATEMENTS 
+
+let temperature = 8; 
+
+switch (temperature) { 
+  case temperature <= 10 && temperature >= 0:  
+    console.log('It\s a bit nippy, best put a coat on.');
+  break;
+  case temperature <= 21 && temperature >= 11:
+  console.log('It\'s mild. You can wear a t-shirt'); 
+  break; 
+  case temperature <= 37 && temperature >= 22: 
+  console.log('HEATWAVE!!!')
+  break; 
+  case temperature > 38: 
+  console.log('GET INSIDE, THE EARTH IS MELTING')
+  break; 
+  default : 
+  console.log('Huh. thermometer\'s not working...')
+}
+// code not working ... only seems to revert to default ----  find out why 
+// remember to use colons not semi colons 
+
+let covidTier = 'Three';
+
+switch (covidTier){
+  case 'One' : 
+  console.log('Rule of six applies.'); 
+  break; 
+  case 'Two' :
+  console.log('You can\'t mix households indoors!'); 
+  break; 
+  case 'Three' : 
+  console.log('No meetings indoors OR outdoors!'); 
+  break;
+}
+
+
+
+
+
+
+
