@@ -1,0 +1,34 @@
+// PLAYING WITH FUNCTIONS
+
+const calculateArea = function(width, height) {
+  const area = width * height; 
+  console.log(area);
+} 
+
+calculateArea(80,33); 
+
+// longform function, returns 2640 or 80 * 33
+
+function nedGreeting() { 
+console.log('Howdy diddly!')
+}
+
+nedGreeting()
+
+// longform function, returns 'Howdy diddly!'
+
+function sayThanks(name) {
+  console.log('Thank you for your purchase '+name+'! We appreciate your business.');
+}
+sayThanks('Cole'); 
+
+// can pass arguments through 
+
+function bigFan(number){
+  console.log(`Wow, you've read this book ${number} times, you must be a big fan!`)
+}
+bigFan(30)
+
+// works with numbers too 
+
+
