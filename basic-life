@@ -19,7 +19,7 @@ console.log('Hello'+' '+'World');
 
 //BUILT IN OBJECTS - MATH
 
-onsole.log(Math.floor(Math.random()*100)); //rounds down, then brackets, then generate a number between 0 and 1, then times that by the number required 
+console.log(Math.floor(Math.random()*100)); //rounds down, then brackets, then generate a number between 0 and 1, then times that by the number required 
 
 console.log(Math.ceil(43.8)); // rounds up 
 
