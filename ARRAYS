@@ -1,0 +1,62 @@
+//ARRAYS
+let faveFood = ['cheese', 'pancakes', 'courgette', 'beans']
+console.log(faveFood[2]); // logs 'courgette
+faveFood[2] = 'broccoli';
+console.log(faveFood[2]); // logs 'broccoli'
+
+// length
+
+const objectives = ['Learn a new languages', 'Read 52 books', 'Run a marathon'];
+console.log(objectives.length); // logs 3
+console.log(objectives[2].length); // logs 14
+
+// push and pop 
+
+const colours = ['red', 'orange', 'yellow', 'green'];
+console.log(colours);
+
+colours.push('blue', 'indigo'); // adds two strings to the end of the 
+console.log(colours);
+
+const chores = ['wash dishes', 'do laundry', 'take out trash', 'cook dinner', 'mop floor'];
+console.log(chores);
+chores.pop() // removes last item from array 
+console.log(chores);
+
+// other examples
+
+const groceryList = ['orange juice', 'bananas', 'coffee beans', 'brown rice', 'pasta', 'coconut oil', 'plantains'];
+groceryList.shift(); // removes first item
+console.log(groceryList);
+groceryList.unshift('popcorn'); // adds to beginning of array 
+console.log(groceryList); 
+console.log(groceryList.slice(1,4)); // creates a slice between array items 1-4
+console.log(groceryList);
+const pastaIndex = groceryList.indexOf('pasta');
+console.log(pastaIndex); // says which number of the array pasta is
+
+// functions and arrays
+
+const arrExample = ['remove', 'the', 'last', 'word', 'of this', 'array', 'carrot']; 
+console.log(arrExample); 
+
+function getRid(roArr){
+  roArr.pop();    // removes the last item in the array 
+}
+getRid(arrExample);
+console.log(arrExample); 
+
+function newWord(arrEx){
+  arrEx[5] = 'sentence'; // changes the sixth item in the array 
+}
+newWord(arrExample);
+console.log(arrExample);
+
+// nested arrays 
+
+const nestingTime = [['one bird', 'another bird'], ['pelican', 'peacock'], ['oiseau', 'das Huhn']]; // a nest of arrays 
+const someBirds = nestingTime[1][1]; // makes a variable which selects 'peacock' from the array 
+console.log(someBirds); // logs this variable 
+
+
+
