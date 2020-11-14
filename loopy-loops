@@ -1,0 +1,102 @@
+// FOR loops
+
+for (let countingPizza = 12; countingPizza >1; countingPizza--) // 'initilisation' = num of slices, 'stopping condition' = less than one slice, 'iteration statement' = remove slice of pizza 
+{console.log(countingPizza);
+}
+console.log('One more piece for me!')
+
+for (let countingZodiac = 1; countingZodiac <=12; 
+countingZodiac++)
+{console.log(countingZodiac);
+}
+console.log('That is how many signs of the Zodiac there are.')
+
+// looping through arrays 
+
+const vacationSpots = ['Tokyo', 'Mexico City', 'Seoul'];
+
+// Write your code below
+for (let i=0; i < vacationSpots.length; i ++){
+  console.log('I would love to visit ' + vacationSpots[i])
+}
+
+// NESTED LOOPS
+
+let jimsFollowers = ['David', 'Moira', 'Stevy', 'Rolly']; 
+let davidsFollowers = ['Moira', 'Stevy', 'Alexy'];
+let mutualFollowers = [];
+
+for (let k = 0; k < jimsFollowers.length; k++){           // loops through jims followers 
+  for (let l = 0; l < davidsFollowers.length; l++){.      // loops through davids followers 
+    if (jimsFollowers[k] === davidsFollowers[l]){         // checks whether the arrays have any of the same value inside them 
+      mutualFollowers.push(jimsFollowers[k]);             // pushes the same followers into a new array 
+    }
+  }
+}
+console.log(mutualFollowers)
+
+// while loop 
+
+const colours = ['red', 'pink', 'orange', 'lime green', 'lilac']
+
+let hairColourToday = undefined;
+let hairColourYest = colours[0]
+while (hairColourToday != hairColourYest) {
+  hairColourToday = colours[Math.floor(Math.random() * 5)];
+  console.log('Your hair colour today is: ' + hairColourToday);
+}
+
+const fantasyPal = ['fairy', 'unicorn', 'manticore', 'beholder', 'dragon']; 
+
+let todaysPal = undefined; 
+let yesterdaysPal = fantasyPal[4];
+while (todaysPal != yesterdaysPal){
+  todaysPal = fantasyPal[Math.floor(Math.random() * 5)];
+  console.log('Your companion for today\'s quest is ' + todaysPal)
+}
+
+// do... while statements 
+
+let cupsOfSugarNeeded = 10
+let cupsAdded = 0
+
+do {
+ cupsAdded++; 
+ console.log('We only added ' + cupsAdded + ', we need more sugar!');
+} while (cupsAdded < cupsOfSugarNeeded); 
+console.log('Ok, we\'ve got enough!')
+
+
+let pizzaSlices = 12
+let oneMoreSlice = 1
+do {
+  pizzaSlices--;
+  console.log('one slice for you, we have ' + pizzaSlices + ' left...')
+} while (pizzaSlices > oneMoreSlice)
+console.log('I\'ll have this last slice!')
+
+// using the break keyword
+
+const fruitAssoc = ['red', 'green', 'yellow', 'orange', 'pink']; 
+
+for (let j = 0; j < fruitAssoc.length; j++) {
+  console.log(fruitAssoc[j]);
+  if (fruitAssoc[j] === 'red'){
+    console.log('Apple!')
+  }
+  if (fruitAssoc[j] === 'green'){
+    console.log('Pear!')
+}
+if (fruitAssoc[j] === 'yellow'){
+  console.log('Lemon!')
+}
+  if (fruitAssoc[j] === 'orange'){
+    break; 
+  }
+}
+console.log('...ORANGE?!')
+
+
+
+
+
